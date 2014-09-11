@@ -48,7 +48,7 @@ bool save_ppm(const char *filename, Image img, bool hasAlpha){
 	ofstream out(filename);
 	if (!out.is_open()){cout<<"out failed"<<endl; return false;}
 	out<<"P3"<<endl;
-	out<<"# CREATOR: simplePPM"<<endl;
+	out<<"# CREATOR: https://github.com/Regaerd/ppm"<<endl;
 	out<<img.w<<" "<<img.h<<endl;
 	out<<"255"<<endl;
 	Pixel *p;
