@@ -27,7 +27,7 @@ bool load_ppm(const char *filename, Image &img){
 			in>>c; pixel.r = (GLubyte)c;
 			in>>c; pixel.g = (GLubyte)c;
 			in>>c; pixel.b = (GLubyte)c;
-				  pixel.a = (GLubyte)1;
+			       pixel.a = (GLubyte)1;
 			img.push_back(pixel); 	
 	    }
 	}
